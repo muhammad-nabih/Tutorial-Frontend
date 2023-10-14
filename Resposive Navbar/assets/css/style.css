@@ -1,0 +1,149 @@
+/* Reset CSS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    background-color: black;
+    /* Background color for the header */
+}
+
+/* Navbar Styling */
+.navbar {
+    z-index: 99;
+    /* Z-index for stacking order */
+    background: #121212;
+    /* Navbar background color */
+    display: flex;
+    align-items: center;
+    /* Center items vertically */
+    justify-content: space-around;
+    /* Spacing for the navbar items */
+    position: sticky;
+    top: 0;
+}
+
+/* Logo Styling */
+.logo {
+    width: 70px;
+    height: 70px;
+    /* Set the logo's width and height */
+}
+
+.logo img {
+    max-width: 100%;
+    /* Ensure the logo image doesn't exceed its container */
+}
+
+/* Navigation Links Styling */
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    /* Gap between navigation links */
+}
+
+li,
+a {
+    transition: .3s;
+    text-decoration: unset;
+    color: white;
+    /* Text color for links */
+    list-style: none;
+    font-size: 1.3rem;
+    /* Font size for links */
+}
+
+li a:hover {
+    color: #0bb4d1;
+}
+
+/* Toggle Button Styling */
+.toggle_btn {
+    color: white;
+    /* Color for the toggle button */
+    display: none;
+    /* Initially hidden on larger screens */
+    cursor: pointer;
+}
+
+/* Dropdown Menu Styling */
+.dropdown_menu {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: .3s;
+    /* Smooth transition for the dropdown menu */
+    position: absolute;
+    transform: translateY(-100%);
+    /* Initially hidden above the header */
+}
+
+/* Individual Dropdown Items Styling */
+.dropdown_menu li {
+    height: 70px;
+    padding: 10px 20px;
+    background-color: #191919;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.088);
+    transition: .3s;
+    /* Smooth transition for individual items */
+    cursor: pointer;
+}
+
+/* Hover Effect on Dropdown Items */
+.dropdown_menu li:hover {
+    border-color: white;
+}
+
+/* Styling for Dropdown Links */
+.dropdown_menu li a {
+    color: white;
+}
+
+/* Active State for Dropdown Menu */
+.dropdown_menu.active {
+    transform: translateY(0);
+    /* Slide down the dropdown menu */
+}
+
+/* Media Query for Small Screens (max-width: 767px) */
+@media (max-width: 767px) {
+
+    /* Toggle Button Styling for Small Screens */
+    .toggle_btn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+    }
+
+    /* Hide Navigation Links on Small Screens */
+    .links {
+        display: none;
+
+    }
+
+    /* Adjust Navbar Spacing on Small Screens */
+    .navbar {
+        justify-content: space-between;
+        padding: 0 20px;
+        /* Add padding to the left and right */
+    }
+}
+
+/* Web Site Content */
+.content {
+    background-color: #ddd;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+}

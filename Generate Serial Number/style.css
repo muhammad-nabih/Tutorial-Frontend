@@ -1,0 +1,37 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 6.25rem;
+}
+
+header .generate {
+  padding: 1.25rem;
+  background: #a5192b;
+  border-radius: 10px;
+  cursor: pointer;
+  user-select: none;
+  width: 200px;
+  text-align: center;
+  font-size: 30px;
+  text-transform: capitalize;
+  transition: .2s linear;
+}
+
+header .generate:hover{
+  background-color: #ff93df;
+}
+
+header .serial {
+  background-color: #ddd;
+  padding: 20px;
+  height: 50px;
+min-width: 200px;
+  text-align: center;
+  display: unset;
+  position: relative;
+  font-size: 2rem;
+  margin: 10px auto;
+  box-shadow: 1px 1px 6px 2px inset;
+}
